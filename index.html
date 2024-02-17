@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="font-family: raleway, sans-serif;">
+    <header>
+        <nav class="lg:mx-28">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium text-lg text-[#030712B3]">
+                            <li><a>Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a>Destinaton</a></li>
+                            <li><a href="">Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-3xl font-extrabold text-[#030712]">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium text-lg text-[#030712B3]">
+                        <li><a>Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a>Destinaton</a></li>
+                        <li><a href="">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-xl font-bold text-[#1DD100] bg-[#1DD10066]">Buss <img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End To End Section -->
+    <section class="lg:mx-28 mx-8 rounded-2xl">
+        <div class="hero h-[500px] " style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-10"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl font-extrabold">End-to-End Travel with <br><span class="text-[#1DD100]"> P Paribahan</span></h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn bg-[#1DD100] text-black text-xl font-bold">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+          <div class="lg:flex gap-8 lg:relative lg:bottom-10  lg:mx-10 lg:justify-between">
+                <div class="flex bg-[#FFF] rounded-xl drop-shadow-2xl p-10 border-b-8 border-[#1DD100]">
+                    <div><img src="images/people.png" alt=""></div>
+                    <div>
+                        <h1 class="text-4xl font-bold">500K+</h1>
+                        <p class="text-lg  font-normal text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+                <div class="flex bg-[#FFF] rounded-xl drop-shadow-2xl p-10 border-b-8 border-[#1DD100]">
+                    <div><img src="images/ticket-cupon.png" alt=""></div>
+                    <div>
+                        <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                        <p class="text-lg  font-normal text-[#03071299]">Tickets sold</p>
+                    </div>
+                </div>
+                <div class="flex bg-[#FFF] rounded-xl drop-shadow-2xl p-10 border-b-8 border-[#1DD100]">
+                    <div><img src="images/stoppage.png" alt=""></div>
+                    <div>
+                        <h1 class="text-4xl font-bold">800K+</h1>
+                        <p class="text-lg  font-normal text-[#03071299]">Rental partners</p>
+                    </div>
+                </div>
+          </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
