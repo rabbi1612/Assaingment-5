@@ -39,23 +39,25 @@ for (const seat of allSeats) {
 
         const totalPrice = document.getElementById('total-price').innerText;
         const convertedTotalPrice = parseInt(totalPrice);
-        document.getElementById('total-price').innerText = convertedTotalPrice + seatPrice;
+        
 
         let grandTotalPrice = document.getElementById('grand-total').innerText;
         const convertedGrandTotal = parseInt(grandTotalPrice);
         const sum = convertedGrandTotal + seatPrice;
-        setInnerText('grand-total', sum)
-
-
-
+       
         if (count < 5) {
             document.getElementById('count-seat').innerText = count;
             element.target.style.backgroundColor = '#1DD100';
             selectedSeatcontainer.appendChild(li)
+        }else{
+            return
         }
         if (totalSeat > 0 && totalSeat > 35) {
             document.getElementById('total-seat').innerText = totalSeat;
+            // return
         }
+        setInnerText('grand-total', sum)
+        document.getElementById('total-price').innerText = convertedTotalPrice + seatPrice;
 
     })
 
@@ -71,6 +73,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
     if (inputval === "NEW15") {
         inputBtn.disabled = true;
         inputValue.value = "";
+        sum = sum * 15 / 100 ;
     }
     else if (inputval === "Couple20") {
         inputBtn.disabled = true;
