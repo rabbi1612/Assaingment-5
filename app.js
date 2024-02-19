@@ -77,6 +77,6 @@ document.getElementById('apply-btn').addEventListener('click', function () {
         inputValue.value = "";
     }
     else{
-        inputval = inputValue.value ;
+        inputValue.value = "" ;
     }
 })
