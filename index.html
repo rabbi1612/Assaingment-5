@@ -434,9 +434,9 @@
                         </div>
                     </div>
                     <div class="py-3">
-                        <input class="bg-[#FFF] w-[100%] lg:w-[260px] h-10 px-6 border-2 rounded-lg"
+                        <input id="cupon-input" class="bg-[#FFF] w-[100%] lg:w-[260px] h-10 px-6 border-2 rounded-lg"
                             placeholder="Have Any Cuppon?" type="text"><button
-                            class="btn bg-[#1DD100] text-white">Apply</button>
+                            class="btn bg-[#1DD100] text-white" id="apply-btn" >Apply</button>
                     </div>
                     <div class="flex justify-between py-3">
                         <div>
@@ -528,7 +528,7 @@
     </section>
     <!-- success section -->
     <section id="success" class="hidden">
-       <div class="bg-[#FFF] p-10 m-40 rounded-xl flex justify-center items-center drop-shadow-2xl">
+       <div class="bg-[#FFF] lg:p-10 mx-4 my-4 lg:m-40 rounded-xl flex justify-center items-center drop-shadow-2xl">
         <div class="flex flex-col justify-center items-center">
             <div>
                 <img src="images/success.png" alt="">
@@ -549,6 +549,7 @@
     </section>
 
     <script src="app.js"></script>
+    <script src="test.js"></script>
 </body>
 
 </html>

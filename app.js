@@ -41,15 +41,16 @@ for (const seat of allSeats) {
         const convertedTotalPrice = parseInt(totalPrice);
         document.getElementById('total-price').innerText = convertedTotalPrice + seatPrice;
 
-        const grandTotalPrice = document.getElementById('grand-total').innerText;
+        let grandTotalPrice = document.getElementById('grand-total').innerText;
         const convertedGrandTotal = parseInt(grandTotalPrice);
-        document.getElementById('grand-total').innerText = convertedGrandTotal + seatPrice
+        const sum = convertedGrandTotal + seatPrice;
+        setInnerText('grand-total', sum)
 
 
 
         if (count < 5) {
             document.getElementById('count-seat').innerText = count;
-            element.target.style.backgroundColor = 'red';
+            element.target.style.backgroundColor = '#1DD100';
             selectedSeatcontainer.appendChild(li)
         }
         if (totalSeat > 0 && totalSeat > 35) {
@@ -59,8 +60,23 @@ for (const seat of allSeats) {
     })
 
 }
-
-function grandtotalCost() {
-
+function setInnerText(id, value) {
+    document.getElementById(id).innerText = value;
 }
 
+document.getElementById('apply-btn').addEventListener('click', function () {
+    const inputValue = document.getElementById('cupon-input');
+    const inputBtn = document.getElementById('apply-btn')
+    const inputval = inputValue.value
+    if (inputval === "NEW15") {
+        inputBtn.disabled = true;
+        inputValue.value = "";
+    }
+    else if (inputval === "Couple20") {
+        inputBtn.disabled = true;
+        inputValue.value = "";
+    }
+    else{
+        inputval = inputValue.value ;
+    }
+})
